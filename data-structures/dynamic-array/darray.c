@@ -10,19 +10,17 @@
 int main(void)
 {
     darray_t darray = init_darray();
+
     char c;
     printf("Enter a string.\n>");
     while(EOF!=(c = fgetc(stdin)) && c != '\n')
-    {
         push(&darray, c);
-    }
     push(&darray, '\0');
 
     while (darray.length)
-    {
         printf("%c", pop(&darray));
-    }
     printf("\n");
+
     close_darray(&darray);
 
     return 0;

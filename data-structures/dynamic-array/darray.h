@@ -79,7 +79,7 @@ DARRAY_TYPE push(darray_t * darray, const DARRAY_TYPE c)
     }
     darray->array[darray->length] = c;
     (darray->length)++;
-    return darray->array[darray->length];
+    return darray->array[darray->length-1];
 }
 
 
