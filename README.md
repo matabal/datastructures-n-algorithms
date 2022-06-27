@@ -1,1 +1,7 @@
 # datastructures-n-algorithms
+The purpose of this repository is to implement data structures and algorithms from scratch as I learn or restudy them. As "from scratch" bit is emphasized, my language of choice will be C initially but I may re-implement some of the same things in other languages such as Python, C++ or Java as I see fit. You may use this repository to study or learn these data structures and algorithms yourself, or you may use them in your applications if you think they will benefit you. That being said, the main objective of this repository is to serve my personal use and I do not except any resposibility (or glory for that matter) for any results that come out of the use of this repostiory.   
+   
+## Some Environmental Info.
+- I'm coding on Ubuntu LTS 20.04
+- I'm using gcc to compile these and if any OS related systems calls to be made, they will be made using linux C librares. (Find documentation here: https://www.man7.org/linux/man-pages/dir_all_alphabetic.html)
+- I'm not sharing compiled (or executable) code as it is standard practice but you may use makefiles to compile and execute the code in here if you are OK using the same compiler with me and you are working in a similar (if not the same) environment.
