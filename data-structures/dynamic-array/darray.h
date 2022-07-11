@@ -13,12 +13,14 @@
 #include <stdlib.h> /* size_t, malloc, realloc */
 #include <math.h> /* pow */
 
-#ifndef DARRAY_H
-#define DARRAH_H
-
 #ifndef DARRAY_TYPE
 #define DARRAY_TYPE char
 #endif
+
+
+#ifndef DARRAY_H
+#define DARRAH_H
+
 
 struct darray
 {
