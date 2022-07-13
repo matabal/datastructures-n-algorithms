@@ -1,8 +1,11 @@
+/*-------------DESCRIPTION--------------*/
 /*
 * Write code that removes duplicates from an unsorted linked list.
 * LINKEDLIST_TYPE is given as int
 * Provide a solution with and without a temporary buffer.
 */
+
+
 
 #define LINKEDLIST_TYPE int
 #include "../linkedlist.h"
@@ -65,8 +68,8 @@ void removedups_wbuff(linkedlist_t * linkedlist)
 }
 /*----NOTES----*/
 /* 
-* Runs O(n) time where n is the number of nodes
-* Consumes O(n) where n is the number of nodes
+* Runs on O(n) time where n is the number of nodes
+* Consumes O(n) space where n is the number of nodes
 */
 
 
@@ -98,13 +101,13 @@ void removedups_wobuff(linkedlist_t * linkedlist)
 }
 /*----NOTES----*/
 /* 
-* Runs O(n^2) time where n is the number of nodes
+* Runs on O(n^2) time where n is the number of nodes
 * Consumes O(1) space not counting the linked list
 */
 
 
 
-/*--------------FOR CLI INTERACTION--------------*/
+
 void print_ll(const linkedlist_t linkedlist)
 {
     node_t * curr = linkedlist.head;
