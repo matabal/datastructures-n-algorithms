@@ -31,13 +31,13 @@ int num2index(const int num, size_t arrlength)
     return (int)(((arrlength-1)/2)+num);
 }
 
+
 int index2num(const int index, const size_t arrlength)
 {
     return (int)(index-((arrlength-1)/2));
 }
 
 
-/*--------------SOLUTION W/O TEMP. BUFFER--------------*/
 void removedups_wbuff(linkedlist_t * linkedlist)
 {
     size_t len = (2*find_abs_max(*linkedlist))+1;
@@ -63,8 +63,14 @@ void removedups_wbuff(linkedlist_t * linkedlist)
 
     free(exists);
 }
+/*----NOTES----*/
+/* 
+* Runs O(n) time where n is the number of nodes
+* Consumes O(n) where n is the number of nodes
+*/
 
 
+/*--------------SOLUTION W/O TEMP. BUFFER--------------*/
 void removedups_wobuff(linkedlist_t * linkedlist)
 {
     node_t * outer = linkedlist->head;
@@ -90,6 +96,12 @@ void removedups_wobuff(linkedlist_t * linkedlist)
         
     }
 }
+/*----NOTES----*/
+/* 
+* Runs O(n^2) time where n is the number of nodes
+* Consumes O(1) space not counting the linked list
+*/
+
 
 
 /*--------------FOR CLI INTERACTION--------------*/
@@ -105,7 +117,6 @@ void print_ll(const linkedlist_t linkedlist)
     }
     printf("\n");
 }
-
 
 
 int main(int argc, char * argv[])
